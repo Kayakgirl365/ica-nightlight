@@ -14,3 +14,14 @@ int readLight() {
 }
 
 // TODO Task 8 (Project Manager): add lightLabel() below this line.
+lightLabel(int light){
+  if (light < DARK_THRESHOLD) {
+    return (const char [5])"Dark";
+  } else if (light < DIM_THRESHOLD) {
+    return (const char [4])"Dim";
+  } else if (light < BRIGHT_THRESHOLD) {
+    return (const char [6])"Bright";
+  } else {
+    return (const char [11])"Very Bright";
+  }
+}
