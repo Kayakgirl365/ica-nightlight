@@ -16,7 +16,7 @@ A small Arduino night light that your team builds together while practicing Git 
 
 **Developer A (Sensor):** Alex Brown (alexbrown989)
 
-**Developer B (LED):** Your Name (your GitHub username)
+**Developer B (LED):** Nathan Huynh (nasterixx)
 
 **Developer C (Button):** Your Name (your GitHub username)
 
