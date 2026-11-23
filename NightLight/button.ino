@@ -3,6 +3,22 @@
 
 // Should return true once for each press of the button.
 bool buttonPressed() {
-  // TODO Task 3 (Developer C): debounce, and detect one press (not a held button).
-  return digitalRead(BUTTON_PIN) == LOW;
+  static int previousState = HIGH;
+  static unsigned long lastChangeMs = 0;
+
+  int state = digitalRead(BUTTON_PIN);
+  unsigned long nowMs = millis();
+
+  if (state != previousState) {
+    previousState = state;
+
+    if (nowMs - lastChangeMs >= BUTTON_DEBOUNCE_MS) {
+      lastChangeMs = nowMs;
+      if (state == LOW) {
+        return true;
+      }
+    }
+  }
+
+  return false;
 }
