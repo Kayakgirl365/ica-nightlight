@@ -10,5 +10,9 @@ void logStatus(int light) {
   Serial.println(light);
 }
 
+void logBanner() {
+  Serial.println("NightLight");
+  Serial.println("Press the button to change mode");
+}
 // TODO Task 6 (Developer B): add logBanner() below this line.
 
