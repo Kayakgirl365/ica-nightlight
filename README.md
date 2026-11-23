@@ -14,7 +14,7 @@ A small Arduino night light that your team builds together while practicing Git 
 
 **Project Manager:** Your Name (your GitHub username)
 
-**Developer A (Sensor):** Your Name (your GitHub username)
+**Developer A (Sensor):** Alex Brown (alexbrown989)
 
 **Developer B (LED):** Your Name (your GitHub username)
 
