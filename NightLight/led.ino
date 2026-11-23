@@ -13,4 +13,11 @@ void fadeTowards(int target) {
   setLed(target);
 }
 
-// TODO Task 7 (Developer C): add blinkLed() below this line.
+void blinkLed(int times) {
+  for (int i = 0; i < times; i++) {
+    setLed(255);
+    delay(150);
+    setLed(0);
+    delay(150);
+  }
+}

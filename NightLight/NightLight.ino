@@ -20,8 +20,7 @@ void setup() {
 void handleButton() {
   if (buttonPressed()) {
     currentMode = (Mode)((currentMode + 1) % 3);
-
-    // TODO Task 7 (Developer C): blink the LED to confirm the mode change.
+    blinkLed((int)currentMode + 1);
   }
 }
 
