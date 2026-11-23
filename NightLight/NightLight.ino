@@ -20,14 +20,17 @@ void setup() {
 void handleButton() {
   if (buttonPressed()) {
     currentMode = (Mode)((currentMode + 1) % 3);
-
-    // TODO Task 7 (Developer C): blink the LED to confirm the mode change.
+    blinkLed((int)currentMode + 1);
   }
 }
 
 void applyAuto(int light) {
   // TODO Task 5 (Developer A): turn the LED on when it is dark.
-  fadeTowards(0);
+  if (light < DARK_THRESHOLD) {
+    fadeTowards(NIGHT_BRIGHTNESS);
+  } else {
+    fadeTowards(0);
+  }
 }
 
 void applyMode(int light) {
